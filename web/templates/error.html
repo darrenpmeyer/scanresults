@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    {% if errors %}<ol>{% for error in errors %}
+        <li>{{error}}</li>{% endfor %}
+    </ol>{% endif %}
+</body>
+</html>
