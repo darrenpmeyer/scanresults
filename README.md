@@ -21,3 +21,16 @@ well-known literary texts.
 
 This project was produced as part of a Veracode hackathon, but the twitter accounts and work product are not reviewed
 or sanctioned by Veracode. All work done as part of this is a personal project, so direct complaints at me.
+
+# Notes and Dependencies
+
+* Python 3
+
+* [barrucadu/markov](https://github.com/barrucadu/markov) -- **NOTE**:
+  This currently requires [the `modularize` branch of this fork][2]; I have submitted a pull request into the main
+  barrucadu repo that should eventually remove this special dependency.
+  
+* docopt (`pip3 install docopt`) is required for some components of the markov; you may be able to get away with
+  not using it, since it's really only needed for the REPL, which we don't use
+
+[2]: https://github.com/darrenpmeyer/markov/tree/modularize
