@@ -22,6 +22,12 @@ well-known literary texts.
 This project was produced as part of a Veracode hackathon, but the twitter accounts and work product are not reviewed
 or sanctioned by Veracode. All work done as part of this is a personal project, so direct complaints at me.
 
+# Usage
+
+    python3 -u -m /path/to/scanresults /path/to/corpus_file.txt
+    
+You may speficy more than one corpus file, and each argument may be a fileglob.
+
 # Notes and Dependencies
 
 * Python 3

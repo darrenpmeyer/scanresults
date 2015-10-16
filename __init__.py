@@ -33,7 +33,7 @@ class ScanResults:
             try:
                 with open(path, mode='r') as f:
                     text = f.read()
-                    print(repr(text))
+
             except IOError as err:
                 self.errors.append(err)
                 continue
@@ -57,8 +57,6 @@ class ScanResults:
                     yield char
 
         self.markovstate.train(n, _charinput(self.corpus), noparagraphs=not paragraphs)
-        print(repr(self.corpus))
-        print(repr(self.markovstate.markov.__dict__))
 
     def paragraphs(self, n=3):
         output = ""
