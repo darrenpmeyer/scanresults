@@ -31,6 +31,14 @@ You may speficy more than one corpus file, and each argument may be a fileglob.
 # Notes and Dependencies
 
 * Python 3
+<<<<<<< HEAD
 * [barrucadu/markov](https://github.com/barrucadu/markov)
+=======
+
+* [barrucadu/markov](https://github.com/barrucadu/markov)~~ -- **NOTE**:
+  This currently requires [the `modularize` branch of this fork][2]; I have submitted a pull request into the main
+  barrucadu repo that should eventually remove this special dependency.~~ (**NB:** pull request was merged, you can use the `master` branch of barrucadu/markov)
+
+>>>>>>> e1f86d6f796229b76aeef0b334db29e9741dd1c7
 * docopt (`pip3 install docopt`) is required for some components of the markov; you may be able to get away with
   not using it, since it's really only needed for the REPL, which we don't use
