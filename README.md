@@ -22,11 +22,38 @@ well-known literary texts.
 This project was produced as part of a Veracode hackathon, but the twitter accounts and work product are not reviewed
 or sanctioned by Veracode. All work done as part of this is a personal project, so direct complaints at me.
 
-# Usage
+# Setup and Usage
 
-    python3 -u -m /path/to/scanresults /path/to/corpus_file.txt
+## Summary
 
-You may speficy more than one corpus file, and each argument may be a fileglob.
+    python3 -u -m scanresults /path/to/corpus_file.txt
+
+You may speficy more than one corpus, and each may be a file or a file glob.
+
+## Initial setup
+
+    mkdir ~/scanresults-install
+    cd ~/scanresults-install
+    git clone https://github.com/barrucadu/markov.git
+    git clone https://github.com/darrenpmeyer/scanresults.git
+
+## Run environment
+
+    export PYTHONPATH=~/scanresults-install/markov:~/scanresults-install
+
+## Running
+
+You **must** make sure the `scanresults` module and the `markov` module are in your `PYTHONPATH`. See _Run environment_ above.
+
+	python3 -u -m scanresults [options] corpus_file [corpus_file ...]
+
+    Options:
+       -t <num> : size of chain to train. Default: 2. Larger values give
+                  more comprehensibility, but less humor.
+       -s <num> : number of sentences to generate. Default: 25.
+       
+       corpus_file : a plain text file or file glob specifying plain text
+                     files to use as an input corpus
 
 # Notes and Dependencies
 
