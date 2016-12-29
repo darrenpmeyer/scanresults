@@ -14,6 +14,11 @@ well-known literary texts.
 
 * Hamlet
 * Hitchhikers Guide to the Galaxy
+* The collected writings of Aleister Crowley
+* The US Constitution
+* The King James Bible
+* Hearthstone card flavor text
+* Walden
 
 [1]: https://www.veracode.com/products/binary-static-analysis-sast "Veracode SAST landing page"
 
