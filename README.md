@@ -36,6 +36,8 @@ You may speficy more than one corpus, and each may be a file or a file glob.
     cd ~/scanresults-install
     git clone https://github.com/barrucadu/markov.git
     git clone https://github.com/darrenpmeyer/scanresults.git
+    
+You can instead use the `util/markov_install.py` script to add the `markov` library into your site library. **This is experimental, and you should proceed at your own risk**. If you do this, you will not need to alter your `PYTHONPATH` to include the `markov` library.
 
 ## Run environment
 
